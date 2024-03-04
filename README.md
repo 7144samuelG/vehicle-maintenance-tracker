@@ -7,52 +7,52 @@ This documentation provides an overview of a smartcontract to track users vehicl
 
 The Vehicle Maintenance Tracker system utilizes the following data structure:
 1. Maintenance
-   - id: A unique identifier for the vehicle maintenance.
-   - date: The date of the vehicle maintenance.
-   - name: The name of the vehicle.
-   - typeVehicle: The type of the vehicle, such as motorcycle, car, truck.
-   - price: The cost of the maintenance.
-   - createdAt: The timestamp when the sleep record was created.
-   - updatedAt: An optional field indicating the timestamp when the sleep record was last updated.
-2. MaintenancePayload: A simplified version of Vehicle Maintenance used for adding new maintenance, containing the name, typeVehicle, date, and price fields.
+   - `id`: A unique identifier for the vehicle maintenance.
+   - `date`: The date of the vehicle maintenance.
+   - `name`: The name of the vehicle.
+   - `typeVehicle`: The type of the vehicle, such as motorcycle, car, truck.
+   - `price`: The cost of the maintenance.
+   - `createdAt`: The timestamp when the sleep record was created.
+   - `updatedAt`: An optional field indicating the timestamp when the sleep record was last updated.
+2. MaintenancePayload: A simplified version of Vehicle Maintenance used for adding new maintenance, containing the `name`, `typeVehicle`, `date`, and `price` fields.
 
 ## Functions
 1. addMaintenance
    - Description: Adds a new maintenance record to the system.
    - Parameters:
-     - payload: MaintenancePayload object containing the details of the vehicle maintenance.
+     - payload: `MaintenancePayload` object containing the details of the vehicle maintenance.
 3. getMaintenances
    - Description: Retrieves all maintenance records stored in the system.
    - Parameters: -
 5. getMaintenance
    - Description: Retrieves a specific maintenance record stored in the system.
    - Parameters:
-     - id: The ID of the vehicle maintenance record to retrieve.
+     - `id`: The ID of the vehicle maintenance record to retrieve.
 7. getMaintenancesByName
    - Description: Retrieves all maintenance records stored in the system based on name search.
    - Parameters:
-     - name: The name of the vehicle maintenance record to retrieve.
+     - `name`: The name of the vehicle maintenance record to retrieve.
 9. getMaintenancesByType
     - Description: Retrieves all maintenance records stored in the system based on type search.
     - Parameters:
-      - typeVehicle: The type of the vehicle maintenance record to retrieve
+      - `typeVehicle`: The type of the vehicle maintenance record to retrieve
 11. getAvaragePriceByName
     - Description: Retrieves average cost of maintenance records stored in the system based on name search.
     - Parameters:
-      - name: The name of the vehicle maintenance record to retrieve.
+      - `name`: The name of the vehicle maintenance record to retrieve.
 13. getAvaragePriceByType
     - Description: Retrieves average cost of maintenance records stored in the system based on type search.
     - Parameters:
-      - typeVehicle: The type of the vehicle maintenance record to retrieve.
+      - `typeVehicle`: The type of the vehicle maintenance record to retrieve.
 15. deleteMaintenance
     - Description: Delete a specific maintenance record from the system by ID.
     - Parameters:
-      - id: The ID of the vehicle maintenance record to delete.
+      - `id`: The ID of the vehicle maintenance record to delete.
 17. updateMaintenance
     - Description: Updates an existing specific maintenance record from the system with new data by ID.
     - Parameters:
-      - id: The ID of the vehicle maintenance record to update.
-      - payload: MaintenancePayload object containing the details of the vehicle maintenance.
+      - `id`: The ID of the vehicle maintenance record to update.
+      - `payload`: MaintenancePayload object containing the details of the vehicle maintenance.
 
 ## Installation
 1. Clone the repository
