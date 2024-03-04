@@ -1,9 +1,9 @@
 # Vehicle Maintenance Tracker
-**Overview**
+## Overview
 
 This documentation provides an overview of a smartcontract to track users vehicle maintenance date and price called Vehicle Maintenance Tracker. This system is built using TypeScript using the Azle framework. Vehicle Maintenance Tracker helps users to track their vehicles maintenance, including Add, Read, Update, and Delete the track record.
 
-**Data Structures**
+## Data Structures
 
 The Vehicle Maintenance Tracker system utilizes the following data structure:
 1. Maintenance
@@ -16,7 +16,7 @@ The Vehicle Maintenance Tracker system utilizes the following data structure:
    - updatedAt: An optional field indicating the timestamp when the sleep record was last updated.
 2. MaintenancePayload: A simplified version of Vehicle Maintenance used for adding new maintenance, containing the name, typeVehicle, date, and price fields.
 
-**Functions**
+## Functions
 1. addMaintenance
    - Description: Adds a new maintenance record to the system.
    - Parameters:
@@ -54,7 +54,7 @@ The Vehicle Maintenance Tracker system utilizes the following data structure:
       - id: The ID of the vehicle maintenance record to update.
       - payload: MaintenancePayload object containing the details of the vehicle maintenance.
 
-**Installation**
+## Installation
 1. Clone the repository
    
    ```
