@@ -1,8 +1,10 @@
 # Vehicle Maintenance Tracker
 **Overview**
+
 This documentation provides an overview of a smartcontract to track users vehicle maintenance date and price called Vehicle Maintenance Tracker. This system is built using TypeScript using the Azle framework. Vehicle Maintenance Tracker helps users to track their vehicles maintenance, including Add, Read, Update, and Delete the track record.
 
 **Data Structures**
+
 The Vehicle Maintenance Tracker system utilizes the following data structure:
 1. Maintenance
    - id: A unique identifier for the vehicle maintenance.
@@ -51,3 +53,25 @@ The Vehicle Maintenance Tracker system utilizes the following data structure:
     - Parameters:
       - id: The ID of the vehicle maintenance record to update.
       - payload: MaintenancePayload object containing the details of the vehicle maintenance.
+
+**Installation**
+1. Clone the repository
+   
+   ```
+   git clone https://github.com/SamuelYudiGunawan/vehicle-maintenance-tracker.git
+   ```
+2. Install dependencies
+
+   ```
+   npm install
+   ```
+4. Start the IC local development environment
+
+   ```
+   dfx start --background --clean
+   ```
+5. Deploy the canisters to the local development environment
+
+   ```
+   dfx deploy
+   ```
