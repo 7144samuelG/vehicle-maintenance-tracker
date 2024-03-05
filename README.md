@@ -21,34 +21,34 @@ The Vehicle Maintenance Tracker system utilizes the following data structure:
    - Description: Adds a new maintenance record to the system.
    - Parameters:
      - payload: `MaintenancePayload` object containing the details of the vehicle maintenance.
-3. getMaintenances
+2. getMaintenances
    - Description: Retrieves all maintenance records stored in the system.
    - Parameters: -
-5. getMaintenance
+3. getMaintenance
    - Description: Retrieves a specific maintenance record stored in the system.
    - Parameters:
      - `id`: The ID of the vehicle maintenance record to retrieve.
-7. getMaintenancesByName
+4. getMaintenancesByName
    - Description: Retrieves all maintenance records stored in the system based on name search.
    - Parameters:
      - `name`: The name of the vehicle maintenance record to retrieve.
-9. getMaintenancesByType
+5. getMaintenancesByType
     - Description: Retrieves all maintenance records stored in the system based on type search.
     - Parameters:
       - `typeVehicle`: The type of the vehicle maintenance record to retrieve
-11. getAvaragePriceByName
+6. getAvaragePriceByName
     - Description: Retrieves average cost of maintenance records stored in the system based on name search.
     - Parameters:
       - `name`: The name of the vehicle maintenance record to retrieve.
-13. getAvaragePriceByType
+7. getAvaragePriceByType
     - Description: Retrieves average cost of maintenance records stored in the system based on type search.
     - Parameters:
       - `typeVehicle`: The type of the vehicle maintenance record to retrieve.
-15. deleteMaintenance
+8. deleteMaintenance
     - Description: Delete a specific maintenance record from the system by ID.
     - Parameters:
       - `id`: The ID of the vehicle maintenance record to delete.
-17. updateMaintenance
+9. updateMaintenance
     - Description: Updates an existing specific maintenance record from the system with new data by ID.
     - Parameters:
       - `id`: The ID of the vehicle maintenance record to update.
@@ -65,12 +65,12 @@ The Vehicle Maintenance Tracker system utilizes the following data structure:
    ```
    npm install
    ```
-4. Start the IC local development environment
+3. Start the IC local development environment
 
    ```
    dfx start --background --clean
    ```
-5. Deploy the canisters to the local development environment
+4. Deploy the canisters to the local development environment
 
    ```
    dfx deploy
