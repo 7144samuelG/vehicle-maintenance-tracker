@@ -36,11 +36,11 @@ The Vehicle Maintenance Tracker system utilizes the following data structure:
     - Description: Retrieves all maintenance records stored in the system based on type search.
     - Parameters:
       - `typeVehicle`: The type of the vehicle maintenance record to retrieve
-6. getAvaragePriceByName
+6. getAveragePriceByName
     - Description: Retrieves average cost of maintenance records stored in the system based on name search.
     - Parameters:
       - `name`: The name of the vehicle maintenance record to retrieve.
-7. getAvaragePriceByType
+7. getAveragePriceByType
     - Description: Retrieves average cost of maintenance records stored in the system based on type search.
     - Parameters:
       - `typeVehicle`: The type of the vehicle maintenance record to retrieve.
@@ -52,7 +52,7 @@ The Vehicle Maintenance Tracker system utilizes the following data structure:
     - Description: Updates an existing specific maintenance record from the system with new data by ID.
     - Parameters:
       - `id`: The ID of the vehicle maintenance record to update.
-      - `payload`: MaintenancePayload object containing the details of the vehicle maintenance.
+      - `payload`: `MaintenancePayload` object containing the details of the vehicle maintenance.
 
 ## Installation
 1. Clone the repository
