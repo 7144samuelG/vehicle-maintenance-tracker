@@ -65,7 +65,7 @@ export function getMaintenancesByType(typeVechile: string): Result<Vec<Maintenan
 
 // function to get avarage price by name
 $query;
-export function getAvaragePriceByName(name: string): Result<number, string> {
+export function getAveragePriceByName(name: string): Result<number, string> {
     const maintenance = maintenanceStorage.values();
     const maintenanceFilter = maintenance.filter(record => record.name === name);
     const totalPrice = maintenanceFilter.reduce((acc, record) => acc + record.price, 0);
@@ -75,7 +75,7 @@ export function getAvaragePriceByName(name: string): Result<number, string> {
 
 // function to get avarage price by type
 $query;
-export function getAvaragePriceByType(typeVechile: string): Result<number, string> {
+export function getAveragePriceByType(typeVechile: string): Result<number, string> {
     const maintenance = maintenanceStorage.values();
     const maintenanceFilter = maintenance.filter(record => record.typeVehicle === typeVechile);
     const totalPrice = maintenanceFilter.reduce((acc, record) => acc + record.price, 0);
